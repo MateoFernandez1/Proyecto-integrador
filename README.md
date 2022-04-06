@@ -1,3 +1,3 @@
-# Proyecto-integrado
+# Proyecto-integrador
 
 asd
