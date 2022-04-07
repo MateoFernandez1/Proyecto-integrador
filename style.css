@@ -1,0 +1,51 @@
+body{
+    width: 100vw;
+    height: 300vh;
+    display: grid;
+    background-color: white;
+    grid-template-rows: 2fr 18fr 6fr 19.5fr 9fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "inicio"
+        "header"
+        "caracte"
+        "precio"
+        "footer";
+}
+nav{
+    background-color: cornflowerblue;
+    grid-area: inicio;   
+}
+.logoverde{
+    width: 10px
+}
+header{
+    grid-area: header;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.caract{
+    grid-area: caracte;
+    background-color: chartreuse;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "capacita analitica solucion" ;
+
+}
+
+.precios{
+    grid-area: precio;
+    background-color: slategray;
+
+}
+
+.final{
+    grid-area: footer;
+    background-color: wheat;
+}
+
