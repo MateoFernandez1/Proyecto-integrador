@@ -2,22 +2,44 @@ body{
     width: 100vw;
     height: 300vh;
     display: grid;
-    background-color: white;
-    grid-template-rows: 2fr 18fr 6fr 19.5fr 9fr;
+    background-color: rgb(192, 204, 19);
+    grid-template-rows: 2fr 18fr 6fr 5fr 15fr 9fr;
     grid-template-columns: 1fr;
     grid-template-areas: 
         "inicio"
         "header"
         "caracte"
         "precio"
+        "planes"
         "footer";
 }
 nav{
     background-color: cornflowerblue;
     grid-area: inicio;   
+    display: inline-flexbox
 }
+
+.ingreso{
+    float: right;
+
+}
+
+.barra{
+    display: flex;
+    justify-content: center;
+}
+.barra__item{
+    display: inline-block;
+    color: blue;
+    padding-left: 15px;
+    padding-right: 10px;
+    } 
+    
 .logoverde{
-    width: 10px
+    float: left;
+    height: 10px;
+    
+ 
 }
 header{
     grid-area: header;
@@ -34,18 +56,42 @@ header{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-        "capacita analitica solucion" ;
-
+        "capacita analitica solucion";
 }
 
 .precios{
     grid-area: precio;
     background-color: slategray;
-
 }
 
-.final{
+.planes{
+    grid-area: planes;
+    display: grid;
+    background-color: palevioletred;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "plan1 plan2 plan3";
+    ;
+}
+.plan1{
+    grid-area: plan1;
+}
+
+.plan2{
+    grid-area: plan2;
+}
+.plan3{
+    grid-area: plan3;
+}
+footer{
     grid-area: footer;
     background-color: wheat;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "logo"
+    "botones"
+    "fin";
+    justify-content: center;
 }
 

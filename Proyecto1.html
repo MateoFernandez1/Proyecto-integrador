@@ -10,17 +10,23 @@
 </head>
 <body>
     <nav>
-        <img src="/logo-verde.png" alt="logo-verde" class="logoverde">
-        <p>Flex</p>
-        <form class="botonesvacios">
-            <input type="button" value="Producto">
-            <input type="button" value="Características">
-            <input type="button" value="Precios">
-        </form>
-        <form class="ingreso">
-            <input type="button" value="Ingresar">
-            <input type="button" value="Registrarse">
-        </form>
+        <div class="divi">
+            <img src="/logo-verde.png" alt="logo-verde" class="logoverde">
+            <p id="logo1">Flex</p>
+        </div>
+
+        <ul class="barra">
+            <li class="barra__item"><a href="#producto">Producto</a></li>
+            <li class="barra__item"><a href="#características">Características</a></li>
+            <li class="barra__item"><a href="#precios">Precios</a></li>          
+          </ul>
+          <div class="divd">
+            <form class="ingreso">
+                <input type="button" value="Ingresar">
+                <input type="button" value="Registrarse">
+            </form>
+          </div>
+
     </nav>
     <header>
         <div>
@@ -38,9 +44,87 @@
         </div>
            
     </header>
-    <div class="caract"></div>
-    <div class="precios"></div>
-    <footer></footer>
-    
+    <div class="caract">
+        <div>
+            <img src="mail-icon.svg" alt="mail">
+            <p>Capacitación</p>
+            <p>Asistencia y capacitación de primer nivel</p>
+        </div>
+        <div>
+            <img src="analytics-icon.svg" alt="mail">
+            <p>Analíticas claras</p>
+            <p>Disfruta de un dashboard de analíticas claras y accionables</p>
+        </div>
+        <div>
+            <img src="people-icon.svg" alt="mail">
+            <p>Soluciones para equipos</p>
+            <p>Facilita el accionar de tu empresa con nuestra suite de herramientas</p>
+        </div>
+    </div>
+    <div class="precios">
+        <div>
+            <p>Precios flexibles que escalan contigo</p>
+            <p>Nuestra facturación se ajusta al tamaño de tu empresa. Tiempo de prueba de 7 días en todso nuestros planes.</p>
+        </div>
+
+        <div class="planes">
+            <div class="plan1">
+                <p>PRECIO</p>
+                <p>Plan básico</p>
+                <p>$10/mes</p>
+                <p>Facturado anualmente</p>
+                <p>1GB de almacenamiento</p>
+                <p>Dashboard completo</p>
+                <p>Asistencia por correo</p>
+                <p>Hasta 10 miembros</p>
+                <form class="demo">
+                    <input type="button" value="Solicitar demo"></form>
+            </div>
+            <div class="plan2">
+                <p>PRECIO</p>
+                <p>Plan freelancer</p>
+                <p>$99/mes</p>
+                <p>Facturado anualmente</p>
+                <p>Características básicas</p>
+                <p>Asistencia preferencial</p>
+                <p>100GB de almacenamiento</p>
+                <p>Hasta 100 miembros</p>
+                <form class="demo">
+                    <input type="button" value="Solicitar demo"></form>
+            </div>
+            <div class="plan3">
+                <p>PRECIO</p>
+                <p>Plan empresas</p>
+                <p>$799/mes</p>
+                <p>Facturado anualmente</p>
+                <p>Características freelancer</p>
+                <p>1TB de almacenamiento</p>
+                <p>Asistencia telefónica 24/7</p>
+                <p>Miembros ilimitados</p>
+                <form class="demo">
+                    <input type="button" value="Solicitar demo"></form>
+            </div>    
+        </div>
+    </div>
+    <footer>
+        <div>
+            <img src="/logo-verde.png" alt="logo-verde" class="logoverde">
+            <p>Flex</p>
+        </div>
+        <div>
+            <form class="botonesvacios2">
+                <input type="button" value="Producto">
+                <input type="button" value="Funcionalidades">
+                <input type="button" value="Precios">
+                <input type="button" value="Recursos">
+                <input type="button" value="Carreras">
+                <input type="button" value="Ayuda">
+                <input type="button" value="Privacidad">
+            </form>
+        </div>
+        <div>
+          <p>©2022 Flex. Un producto ficticio de Senpai.</p>  
+        </div>
+    </footer>  
 </body>
 </html>
