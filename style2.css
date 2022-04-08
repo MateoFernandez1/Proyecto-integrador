@@ -58,6 +58,7 @@ label{
     border: none;
     background-color: #2a3342;
 }
+
 .input{
     width: 250px;
     height: 22px;
@@ -81,5 +82,5 @@ label{
 }
 
 #b1{
-    margin-left: 85px;
+    margin-left: 65px;
 }
