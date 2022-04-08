@@ -160,16 +160,21 @@ margin-left: 10px;
     margin: 60px;
 }
 #headerfoto{
-  position: relative;
-    width:100%;
+  position: absolute;
+  padding: 60px;
+
+    z-index: 0;
 }   
 #amarillo{
-    z-index: -1;
+    position: absolute;
+    z-index: 1;
 
 }
 #azul{
+    position:absolute;
     z-index: 1;
-
+    margin-left: 495px;
+    margin-top: 470px;
 }
 .caract{
     grid-area: caracte;
