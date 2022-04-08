@@ -2,7 +2,8 @@ body{
     width: 100vw;
     height: 300vh;
     display: grid;
-    background-color: rgb(192, 204, 19);
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
     grid-template-rows: 2fr 18fr 6fr 5fr 15fr 9fr;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -14,32 +15,74 @@ body{
         "footer";
 }
 nav{
-    background-color: cornflowerblue;
-    grid-area: inicio;   
-    display: inline-flexbox
+    background-color: white;
+    grid-area: inicio;  
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr; 
+    grid-template-areas: 
+    "logo botones ingreso";
+    margin-bottom: 30px;
 }
+.divi{
+    grid-area: logo;
+    display: inline;
+    
+}
+.b1{
+    color: #2a3342;
+    background-color: white;
+    outline: none;
+    border: none;
+    font-size: larger;
+    padding-left: 30;
+    display: block;
+    
+}
+.b2{
+    color: white;
+    background-color: #2ad167;
+    border-radius:5px;
+    border: none;
+    font-size: larger;
+    display: block;
+    height: 40px;
+    width: 120px;
 
+
+}
 .ingreso{
-    float: right;
-
+    grid-area: ingreso;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-
 .barra{
+    grid-area: botones;
     display: flex;
     justify-content: center;
+    column-gap: 50px;
+    font-size: larger;
+    font-weight: bold;
+    color: #2a3342;
+    padding-top: 20px;
+
+    
 }
 .barra__item{
     display: inline-block;
-    color: blue;
     padding-left: 15px;
     padding-right: 10px;
-    } 
-    
-.logoverde{
+
+}   
+.logoverde1{
     float: left;
-    height: 10px;
-    
- 
+    padding-top: 25px;
+    height: 40px;}   
+
+#logo1{
+    font-weight: bold;
+    font-size: xx-large; 
+    padding-left: 45px; 
 }
 header{
     grid-area: header;
@@ -47,51 +90,495 @@ header{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "texto foto";
+    margin-top: 40px;
+}
+.texto0{
+    padding: 80px;
+    padding-left: 70px;
+    padding-top: 100px;
+    grid-area: texto;
+
+}
+.texto1{
+    color: white;
+    background-color: #2ad167;
+    display: inline;
+    border-radius:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+
+}
+.texto2{
+    color: #2a3342;
+    font-size: 80px;
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+
+}
+.texto3{
+    color: #2a3342;
+    font-size: 25px;
+    margin-bottom: 40px; 
+
 }
 
+.botones{
+    padding-top: 30px;
+    display:inline-flex;
+
+}
+#b3{
+    color: white;
+    background-color: #2ad167;
+    border-radius:5px;
+    border: none;
+    font-size: 20px;
+    display: block;
+    height: 50px;
+    width: 200px;
+
+}
+#b4{
+    color: #2a3342;
+background-color: white;
+border-radius:5px;
+font-size: 20px;
+display: block;
+height: 50px;
+width: 200px;
+margin-left: 10px;
+
+
+
+}
+.foto0{
+    grid-area: foto;
+    margin: 60px;
+}
+#headerfoto{
+  position: relative;
+    width:100%;
+}   
+#amarillo{
+    z-index: -1;
+
+}
+#azul{
+    z-index: 1;
+
+}
 .caract{
     grid-area: caracte;
-    background-color: chartreuse;
+    background-color: white;
     display: grid;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
     grid-template-areas: 
         "capacita analitica solucion";
 }
-
+.contcaract{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.iconos{
+    background-color: #2ad167;
+    padding: 25px;
+    border-radius: 5px;
+    color: white;
+}
+.pgrande{
+    font-weight: bolder;
+    font-size: 40px;
+}
+.pchico{
+    font-size: 27px;
+}
 .precios{
     grid-area: precio;
-    background-color: slategray;
+    background-color: white;
+    color: #2a3342;
+    font-size: 25px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
-
+#preflex{
+    font-size: 65px;
+    font-weight: bolder;
+}
+#preflex2{
+    margin-bottom: 90px;
+}
 .planes{
     grid-area: planes;
     display: grid;
-    background-color: palevioletred;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
     grid-template-areas: 
     "plan1 plan2 plan3";
     ;
 }
 .plan1{
     grid-area: plan1;
+    background-color: #f7f8f9;
 }
-
 .plan2{
     grid-area: plan2;
+    background-color: #f7f8f9;
 }
 .plan3{
     grid-area: plan3;
+    background-color: #f7f8f9;
+}
+.p1{
+    color: #2ad167;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.p2{
+    color: #2ad167;
+    text-align: center;
+    font-weight: bold;
+}
+
+.p3{
+    color: #2a3342;
+    font-size: 60px;
+    text-align: center;
+    margin: 40px;
+}
+.p4{
+    color: #91a9d3;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.p5::before{
+  background-image: url('5610944.png');
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  margin-right: 15px;
+
+  height: 30px;
+  content:" ";
+}
+
+.p5{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a3342;
+    margin-left: 75px;
+    padding-left: 30px;
+}
+.demo{
+    color: white;
+    background-color: #2ad167;
+    border-radius:5px;
+    border: none;
+    font-size: x-large;
+    width: 80%;
+    font-size:20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    display: block;
+    height: 60px;
+
 }
 footer{
-    grid-area: footer;
-    background-color: wheat;
+    background-color: #2a3342;
+    color: #91a9d3;
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+ 
+
     grid-template-areas: 
     "logo"
     "botones"
     "fin";
     justify-content: center;
 }
+#logo2{
+    color: white;
+    text-align: center;    
+    font-weight: bold;
+    display: inline;
+    
+}
+.botonesvacios{
+    color: #91a9d3;
+    background-color: #2a3342;
+    outline: none;
+    border: none;
+    font-size: x-large;
+    padding-left: 30;
+}
+.logo-verde2{
+   
+    height: 40px;
+    width: 40px;
+}
+.botonesvacios0{
+    margin-top: 80px;
+}
+
+.part1{
+    margin-top: 100px;
+    display: inline-block; 
+    margin-left: 300px; 
+    }
+.fin{
+    text-align: center;
+    margin-bottom: 150px; 
+    
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        grid-template-rows: 2fr 6fr 18fr 4fr 18fr 3fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "inicio"
+            "header"
+            "caracte"
+            "precio"
+            "planes"
+            "footer";
+    }
+    nav{ grid-area: inicio;  
+    display: grid;
+    width: 390px;
+    grid-template-columns: 1fr 2fr; 
+    grid-template-areas: 
+    "logo ingreso";}
+    .barra{
+        display: none;
+    }
+    .ingreso{
+        grid-area: ingreso;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+   
+.logoverde1{
+    float: left;
+    padding-top: 25px;
+    height: 40px;}   
+.divi{
+        grid-area: logo;
+        display: inline; 
+        padding-top: 15px;   
+    }
+#logo1{
+    font-weight: bold;
+    font-size: x-large; 
+    padding-left: 45px; 
+}
+.b1{
+    font-size: larger;
+    padding-left: 0px;    
+}
+.b2{
+
+    font-size: larger;
+    padding-right: 0px;
+
+}
+    header{
+    grid-area: header;
+    background-color: white;
+    display: grid;
+    width: 390px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+    "texto";}
+    .foto0{
+        display: none;
+    }
+    .texto0{
+        padding: 0px;
+        padding-left: 10px;
+        padding-top: 0px;
+        grid-area: texto;
+        width: 380px;
+    
+    }
+    .texto1{
+        color: white;
+        background-color: #2ad167;
+        display: inline;
+        border-radius:15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding: 5px;
+    
+    }
+    .texto2{
+        color: #2a3342;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-top: 20px;
+        margin-bottom: 20px; 
+        width: 390px;
+    
+    }
+    .texto3{
+        color: #272b33;
+        font-size: 25px;
+        margin-bottom: 20px; 
+    
+    }
+    #b3{
+   
+        font-size: 15px;
+        display: block;
+        height: 30px;
+        width: 100px;
+    
+    }
+    #b4{
+
+    font-size: 15px;
+    display: block;
+    height: 30px;
+    width: 100px;
+    margin-left: 10px;}
+    
+
+
+.caract{
+        grid-area: caracte;
+        background-color: white;
+        display: grid;
+        text-align: center;
+        width: 390px;
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "capacita"
+            "analitica"
+            "solucion";
+        }
+    .pgrande{
+        font-size: x-large;
+    }    
+    .pchico{
+        font-size: large;
+        padding-right: 10px;
+    }
+
+.contcaract{
+     margin-left: 5px;
+     margin-right: 5px;
+ }
+
+.planes{
+    grid-area: planes;
+    display: grid;
+    width: 380px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    row-gap: 15px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "plan1" 
+    "plan2" 
+    "plan3";
+}
+
+.precios{
+    margin-left: 15px;
+    margin-right: 0px;
+    width: 375px;
+}
+#preflex{
+    font-size: x-large;
+}
+#preflex2{
+    display: none;
+}
+
+
+.p5{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a3342;
+    margin-left: 5px;
+    padding-left: 30px;
+}
+
+.demo{
+    color: white;
+    background-color: #2ad167;
+    border-radius:5px;
+    border: none;
+    font-size: x-large;
+    width: 80%;
+    font-size:20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    display: block;
+    height: 40px;
+
+}
+
+.botonesvacios{
+    display: none;
+}
+.logo-verde2{
+   
+    height: 40px;
+    width: 40px;
+}
+footer{
+    background-color: #2a3342;
+    color: #91a9d3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 390px;
+    grid-template-areas: 
+    "logo"
+    "fin";
+    justify-content: center;
+}
+
+.botonesvacios0{
+    margin-top: 80px;
+}
+
+.part1{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.fin{
+    text-align: center;
+    margin-bottom: 50px; 
+    font-size: small;
+}      
+}
+
 
